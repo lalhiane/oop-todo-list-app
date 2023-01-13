@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 15px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #525ca9;
+}
+h2 {
+  margin: 15px 0;
+  font-weight: 600;
+  font-size: 1.8em;
+  text-align: center;
+  color: white;
+}
+.container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.table {
+  margin: 0 auto;
+  width: 600px;
+  background-color: white;
+}
+.table-head,
+.table-body .todo,
+.table-foot {
+  display: flex;
+}
+.table span,
+.table-foot input {
+  display: block;
+  padding: 10px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.first {
+  width: 50%;
+}
+.second {
+  width: 30%;
+}
+.third {
+  width: 20%;
+}
+.table-head span {
+  background-color: #36c1f2;
+  color: white;
+}
+.table-body .todo .third {
+  font-weight: bold;
+  color: #36c1f2;
+  cursor: pointer;
+}
+.table-body .msg {
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+.table-foot input {
+  background-color: #eee;
+  text-align: left;
+}
+.table-foot input:focus {
+  outline: none;
+}
+.table-foot input[type="submit"] {
+  text-align: center;
+  background-color: #36c1f2;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
